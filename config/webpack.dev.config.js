@@ -6,7 +6,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
     mode:'development',
     entry: {
-        bundle: path.resolve(__dirname, '../src/main.js'),
+        bundle: path.resolve(__dirname, '../src/index.js'),
         //添加要打包在vendor里面的库
         vendors: ['react','react-dom','react-router'],
     },
@@ -15,7 +15,7 @@ module.exports = {
         filename: '[name].js'
     },
     devServer: {
-        host: '0.0.0.0',
+        host: 'localhost',
         port: 8080
     },
     module: {
@@ -97,7 +97,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './common.html', 
+            template: './index.html', 
             inject: 'body' 
         }),
         new CleanWebpackPlugin(['dist',
