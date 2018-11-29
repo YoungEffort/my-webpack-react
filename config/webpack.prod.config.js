@@ -96,9 +96,8 @@ module.exports = {
             template: './index.html', 
             inject: 'body' 
         }),
-        new CleanWebpackPlugin(['dist',
-            'build'], {
-            root:__dirname,
+        new CleanWebpackPlugin(['build/*.*'], {
+            root: path.resolve(__dirname,'../'),
             verbose: true,
             dry: false,
             exclude: ['jslibs']
