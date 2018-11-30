@@ -44,7 +44,9 @@
         [官网](https://www.webpackjs.com/plugins/html-webpack-plugin/)
         [参考链接](https://segmentfault.com/a/1190000013883242)
     3. 配置babel
+   
         https://www.jianshu.com/p/329e4dccd660
+        
     问题：用了es6的结构赋值，误认为是babel没编译好解构赋值，一直在找babel的问题。最后，更改es6为es5语法，发现编译同样未通过，证实不是babel编译问题，最终定位到自己语法写错，然后解决了问题。---总结：这次解决问题发现在找babel过程中浪费了很多时间，原因在于自己定位问题失误，以后必须精确定位问题在针对处理问题，可节省大量不必要的时间开销。
 3. 配置生产打包环境webpack---提交生产打包webpack配置
 
