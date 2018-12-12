@@ -44,7 +44,8 @@ module.exports = {
             {
                 //使用less配置
                 test: /\.less$/,
-                loader: "style-loader!css-loader"
+                use:['style-loader','css-loader','less-loader'] 
+                // loader: "style-loader!css-loader"
             },
             // {
             //     test: /\.(png|jpg|gif)$/,

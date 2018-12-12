@@ -53,3 +53,13 @@
 ### 根据问题优化
 1. 问题：npm run build会新增文件
    解决：clean-webpack-plugin插件
+2. 问题：想启动npm run dev自动弹开浏览器
+   解决：webpack-dev-server有个--open参数就是用来打开浏览器的
+
+### react项目结构配置
+1. react路由配置：
+   
+   [参考](https://segmentfault.com/a/1190000011765141)
+
+2. 引入antd
+

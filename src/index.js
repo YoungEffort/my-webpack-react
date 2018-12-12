@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import RouterMap from './router/index.jsx';
+import './index.scss';
 
 
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<RouterMap />, document.getElementById('root'));
 
